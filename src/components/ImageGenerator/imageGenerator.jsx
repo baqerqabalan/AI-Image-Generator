@@ -23,7 +23,7 @@ const ImageGenerator = () => {
         `https://api.pexels.com/v1/search?query=${encodeURIComponent(prompt)}`,
         {
           headers: {
-            Authorization: "bcqIE8utRcxDKWcGQqyBX6BuzhvjKRfm0FpSThlaCGA5dOyrkcxVDw5a",
+            Authorization: `${process.env.API_KEY}`,
           },
         }
       );
